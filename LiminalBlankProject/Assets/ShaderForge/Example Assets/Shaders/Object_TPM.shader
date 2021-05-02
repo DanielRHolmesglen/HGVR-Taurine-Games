@@ -157,12 +157,10 @@ Shader "TheMasonX/Triplanar Mapping/Object Space" {
                 float4 _Color_2_var = UNITY_ACCESS_INSTANCED_PROP( Props, _Color_2 );
                 float _Detail_var = UNITY_ACCESS_INSTANCED_PROP( Props, _Detail );
                 float _Scale_var = UNITY_ACCESS_INSTANCED_PROP( Props, _Scale );
-                float3 node_7513 = Object_TPM( _Tile , i.posWorld.rgb , objPos.rgb , i.normalDir , _Detail_var , _Scale_var );
                 float _Blend_var = UNITY_ACCESS_INSTANCED_PROP( Props, _Blend );
-                float3 node_7030 = lerp(_Color_var.rgb,_Color_2_var.rgb,pow(node_7513,_Blend_var));
                 float4 _Color_3_var = UNITY_ACCESS_INSTANCED_PROP( Props, _Color_3 );
                 float4 _Albedo_var = tex2D(_Albedo,TRANSFORM_TEX(i.uv0, _Albedo));
-                float3 diffuseColor = lerp(node_7030,_Color_3_var.rgb,_Albedo_var.rgb); // Need this for specular when using metallic
+                float3 diffuseColor = lerp(lerp(_Color_var.rgb,_Color_2_var.rgb,pow(Object_TPM( _Tile , i.posWorld.rgb , objPos.rgb , i.normalDir , _Detail_var , _Scale_var ),_Blend_var)),_Color_3_var.rgb,_Albedo_var.rgb); // Need this for specular when using metallic
                 diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
                 specularMonochrome = 1.0-specularMonochrome;
                 float NdotV = abs(dot( normalDirection, viewDirection ));
@@ -309,12 +307,10 @@ Shader "TheMasonX/Triplanar Mapping/Object Space" {
                 float4 _Color_2_var = UNITY_ACCESS_INSTANCED_PROP( Props, _Color_2 );
                 float _Detail_var = UNITY_ACCESS_INSTANCED_PROP( Props, _Detail );
                 float _Scale_var = UNITY_ACCESS_INSTANCED_PROP( Props, _Scale );
-                float3 node_7513 = Object_TPM( _Tile , i.posWorld.rgb , objPos.rgb , i.normalDir , _Detail_var , _Scale_var );
                 float _Blend_var = UNITY_ACCESS_INSTANCED_PROP( Props, _Blend );
-                float3 node_7030 = lerp(_Color_var.rgb,_Color_2_var.rgb,pow(node_7513,_Blend_var));
                 float4 _Color_3_var = UNITY_ACCESS_INSTANCED_PROP( Props, _Color_3 );
                 float4 _Albedo_var = tex2D(_Albedo,TRANSFORM_TEX(i.uv0, _Albedo));
-                float3 diffuseColor = lerp(node_7030,_Color_3_var.rgb,_Albedo_var.rgb); // Need this for specular when using metallic
+                float3 diffuseColor = lerp(lerp(_Color_var.rgb,_Color_2_var.rgb,pow(Object_TPM( _Tile , i.posWorld.rgb , objPos.rgb , i.normalDir , _Detail_var , _Scale_var ),_Blend_var)),_Color_3_var.rgb,_Albedo_var.rgb); // Need this for specular when using metallic
                 diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
                 specularMonochrome = 1.0-specularMonochrome;
                 float NdotV = abs(dot( normalDirection, viewDirection ));
