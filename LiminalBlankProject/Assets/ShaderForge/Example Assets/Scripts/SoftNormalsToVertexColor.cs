@@ -14,19 +14,19 @@ public class SoftNormalsToVertexColor : MonoBehaviour {
 	public bool generateOnAwake = false;
 	public bool generateNow = false;
 
-	void OnDrawGizmos() {
+	private void OnDrawGizmos() {
 		if( generateNow ) {
 			generateNow = false;
 			TryGenerate();
 		}
 	}
 
-	void Awake() {
+	private void Awake() {
 		if(generateOnAwake)
 			TryGenerate();
 	}
 
-	void TryGenerate() {
+	private void TryGenerate() {
 		MeshFilter mf = GetComponent<MeshFilter>();
 		if( mf == null ) {
 			Debug.LogError( "MeshFilter missing on the vertex color generator", gameObject );
@@ -40,7 +40,7 @@ public class SoftNormalsToVertexColor : MonoBehaviour {
 		Debug.Log("Vertex colors generated", gameObject);
 	}
 
-	void Generate(Mesh m) {
+	private void Generate(Mesh m) {
 
 		Vector3[] n = m.normals;
 		Vector3[] v = m.vertices;

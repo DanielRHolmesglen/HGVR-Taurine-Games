@@ -24,7 +24,7 @@
 		}
 
 
-		void OnDrawGizmos(){
+		private void OnDrawGizmos(){
 
 
 			RaycastHit hit;
