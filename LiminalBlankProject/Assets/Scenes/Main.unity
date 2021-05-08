@@ -1198,6 +1198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 7
+  avatarEye: {fileID: 1260162968675655302}
 --- !u!1 &1260162968803963184
 GameObject:
   m_ObjectHideFlags: 0
