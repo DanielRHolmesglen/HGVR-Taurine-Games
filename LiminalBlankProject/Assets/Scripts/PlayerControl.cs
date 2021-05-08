@@ -14,6 +14,7 @@ public class PlayerControl : MonoBehaviour
     
     private void Awake()
     {
+        // I'm not 100% sure when the primary input device becomes available. This is to save ourselves some suffering.
         ExperienceApp.Initializing += () =>
         {
             primaryInput = VRDevice.Device.PrimaryInputDevice;
@@ -23,10 +24,14 @@ public class PlayerControl : MonoBehaviour
 
     private void Update()
     {
+        // Liminal's SDK seems to recognise my WMR headset as a GearVR device..? As such the controllers aren't
+        // functional. This is something to let us spoof controller input only if we want to - it has no runtime cost.
         #if !DEBUG_VR
         var movementVector = primaryInput.GetAxis2D(VRAxis.OneRaw).normalized * movementSpeed;
         #else
-        var movementVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * movementSpeed;
+        var movementVector = new Vector2(
+            Input.GetAxisRaw("Horizontal"),
+            Input.GetAxisRaw("Vertical")).normalized * movementSpeed;
         #endif
 
         var forward = Quaternion.Euler(0f, avatarEye.rotation.eulerAngles.y, 0f);
