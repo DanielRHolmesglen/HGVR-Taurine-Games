@@ -12,7 +12,6 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="PlayerControl.cs" t="Include" />
-          <e p="PlayerHands.cs" t="Include" />
         </e>
         <e p="ShaderForge" t="Include">
           <e p="Editor" t="Include">
