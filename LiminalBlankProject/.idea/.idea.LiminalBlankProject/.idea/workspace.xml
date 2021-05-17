@@ -25,8 +25,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="038907e7-a674-4b16-adb0-de36608b2a6a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LiminalBlankProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LiminalBlankProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LiminalBlankProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LiminalBlankProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room (1).fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room (1).fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Room.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RoomOccupied.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RoomOccupied.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Materials/treetextures.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/treetextures.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +47,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/DeviceUtils.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/VR/Devices/Emulator/EmulatorDevice.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/VR/Devices/Emulator/VREmulator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/DeviceUtils.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/Frameworks/Oculus/VR/Editor/OVRLint.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -98,6 +109,7 @@
       <updated>1620439633274</updated>
       <workItem from="1620439646214" duration="4146000" />
       <workItem from="1620693009430" duration="6029000" />
+      <workItem from="1621204506168" duration="2082000" />
     </task>
     <servers />
   </component>
