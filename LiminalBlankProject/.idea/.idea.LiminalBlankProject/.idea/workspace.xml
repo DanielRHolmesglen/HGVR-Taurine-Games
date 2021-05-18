@@ -25,18 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="038907e7-a674-4b16-adb0-de36608b2a6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LiminalBlankProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LiminalBlankProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LiminalBlankProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LiminalBlankProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room (1).fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room (1).fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Room.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RoomOccupied.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RoomOccupied.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Materials/treetextures.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/treetextures.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +39,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Unity/GO compositing/Assets/Scripts/Composites.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/DeviceUtils.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/VR/Devices/Emulator/EmulatorDevice.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/VR/Devices/Emulator/VREmulator.cs" root0="SKIP_HIGHLIGHTING" />
@@ -77,6 +70,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -109,7 +103,9 @@
       <updated>1620439633274</updated>
       <workItem from="1620439646214" duration="4146000" />
       <workItem from="1620693009430" duration="6029000" />
-      <workItem from="1621204506168" duration="2082000" />
+      <workItem from="1621204506168" duration="2083000" />
+      <workItem from="1621298027281" duration="1374000" />
+      <workItem from="1621299435848" duration="4866000" />
     </task>
     <servers />
   </component>
@@ -138,6 +134,10 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="92" y="92" width="2376" height="896" key="VCS.FileHistoryDialog/0.0.2560.1080/0.-1080.1280.720/0.-2160.1280.720/0.-3240.1280.720@0.0.2560.1080" timestamp="1620442907947" />
+    <state x="936" y="250" key="run.anything.popup" timestamp="1621300960959">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="936" y="250" key="run.anything.popup/0.0.2560.1080/2560.0.1920.1080@0.0.2560.1080" timestamp="1621300960959" />
     <state x="943" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1620442423501">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
