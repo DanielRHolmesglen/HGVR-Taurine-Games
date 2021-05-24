@@ -730,6 +730,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WreckRoomV2
       objectReference: {fileID: 0}
+    - target: {fileID: 8289789071889172058, guid: 41c06f09385e03e458abf4d423fe4934,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4994605123495294025, guid: 41c06f09385e03e458abf4d423fe4934,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -809,6 +814,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707476847234537005, guid: 41c06f09385e03e458abf4d423fe4934,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3593
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973568900093794908, guid: 41c06f09385e03e458abf4d423fe4934,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0006
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973568900093794908, guid: 41c06f09385e03e458abf4d423fe4934,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3891
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41c06f09385e03e458abf4d423fe4934, type: 3}
