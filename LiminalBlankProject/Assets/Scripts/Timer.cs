@@ -25,6 +25,6 @@ public class Timer : MonoBehaviour
         }
         
         timeRemaining -= Time.deltaTime;
-        text.text = $"{TimeSpan.FromSeconds(timeRemaining):hh\\:mm\\:ss}";
+        text.text = $"{TimeSpan.FromSeconds(timeRemaining):mm\\:ss}";
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3280910118665253280}
   - component: {fileID: 2524178673591383189}
   - component: {fileID: 7604353140422349987}
+  - component: {fileID: 4203352211595610618}
   m_Layer: 0
   m_Name: Chair
   m_TagString: Untagged
@@ -76,6 +77,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4203352211595610618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899537146657290222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227464773687dc44a8b5ef68b49c5579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRigidbody: {fileID: 0}
 --- !u!1 &1252566359918915367
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,6 +103,7 @@ GameObject:
   - component: {fileID: 4523524075008136892}
   - component: {fileID: 3426695420216935017}
   - component: {fileID: 6233123084765968696}
+  - component: {fileID: 1937367525651487662}
   m_Layer: 0
   m_Name: Monitor
   m_TagString: Untagged
@@ -166,6 +181,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.07359877, y: 0.247314, z: 0.03135178}
   m_Center: {x: -0.015653381, y: 0.12461436, z: 0.0017197808}
+--- !u!114 &1937367525651487662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252566359918915367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227464773687dc44a8b5ef68b49c5579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRigidbody: {fileID: 0}
 --- !u!1 &2064389826029301660
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +313,7 @@ GameObject:
   - component: {fileID: 627466749599682331}
   - component: {fileID: 2960013766409152012}
   - component: {fileID: 5464538324445591475}
+  - component: {fileID: 1616770670157514110}
   m_Layer: 0
   m_Name: Mouse
   m_TagString: Untagged
@@ -336,6 +365,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1616770670157514110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2461050268641739037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227464773687dc44a8b5ef68b49c5579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRigidbody: {fileID: 0}
 --- !u!1 &2749581120851595994
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +468,7 @@ GameObject:
   - component: {fileID: 6579087903647587049}
   - component: {fileID: 7818838604815977446}
   - component: {fileID: 4968958015715687588}
+  - component: {fileID: 3639823078495835133}
   m_Layer: 0
   m_Name: Monitor (2)
   m_TagString: Untagged
@@ -490,6 +533,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3639823078495835133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2966423589743130191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227464773687dc44a8b5ef68b49c5579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRigidbody: {fileID: 0}
 --- !u!1 &3105139052259914185
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,6 +560,7 @@ GameObject:
   - component: {fileID: 3542110577172042459}
   - component: {fileID: 6901218513750798653}
   - component: {fileID: 3211856794230165273}
+  - component: {fileID: 1929240139523979364}
   m_Layer: 0
   m_Name: Desk
   m_TagString: Untagged
@@ -594,6 +651,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1929240139523979364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3105139052259914185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227464773687dc44a8b5ef68b49c5579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRigidbody: {fileID: 0}
 --- !u!1 &3272818544389633210
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,6 +677,7 @@ GameObject:
   - component: {fileID: 1406847170697968413}
   - component: {fileID: 7335151079197221080}
   - component: {fileID: 7021356344402325309}
+  - component: {fileID: 4419440926671309132}
   m_Layer: 0
   m_Name: Computer
   m_TagString: Untagged
@@ -702,6 +773,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4419440926671309132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3272818544389633210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227464773687dc44a8b5ef68b49c5579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRigidbody: {fileID: 0}
 --- !u!1 &3545440871578617785
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,6 +797,7 @@ GameObject:
   - component: {fileID: 3050927653097973320}
   - component: {fileID: 1347614604346561500}
   - component: {fileID: 6807940354888344690}
+  - component: {fileID: 7822448241098628932}
   m_Layer: 0
   m_Name: Keyboard
   m_TagString: Untagged
@@ -764,6 +849,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7822448241098628932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3545440871578617785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227464773687dc44a8b5ef68b49c5579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRigidbody: {fileID: 0}
 --- !u!1 &4537403488269022711
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,6 +1097,7 @@ GameObject:
   - component: {fileID: 8695855052109437807}
   - component: {fileID: 4732390696700461073}
   - component: {fileID: 5749796335593974640}
+  - component: {fileID: 1444774256321313825}
   m_Layer: 0
   m_Name: Book
   m_TagString: Untagged
@@ -1095,6 +1194,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0105, y: 0.013, z: 0.0105}
   m_Center: {x: 0, y: 0, z: 0.00004310254}
+--- !u!114 &1444774256321313825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958400161157935027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227464773687dc44a8b5ef68b49c5579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRigidbody: {fileID: 0}
 --- !u!1 &7460368537255990114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,6 +1256,7 @@ GameObject:
   - component: {fileID: 3859198009706664658}
   - component: {fileID: 2820125976659203192}
   - component: {fileID: 1012992303239435300}
+  - component: {fileID: 4103142393693881439}
   m_Layer: 0
   m_Name: Monitor (1)
   m_TagString: Untagged
@@ -1208,6 +1321,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4103142393693881439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7545210315931206096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227464773687dc44a8b5ef68b49c5579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRigidbody: {fileID: 0}
 --- !u!1 &7830411578808081114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1377,6 +1503,7 @@ GameObject:
   - component: {fileID: 8527877225476814791}
   - component: {fileID: 8095133568520127503}
   - component: {fileID: 2565607205007702343}
+  - component: {fileID: 2518059717909597517}
   m_Layer: 0
   m_Name: Tablet
   m_TagString: Untagged
@@ -1473,6 +1600,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0105, y: 0.02, z: 0.0105}
   m_Center: {x: 0, y: 0.00000011920929, z: 0.000000029802322}
+--- !u!114 &2518059717909597517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7954989905097147163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227464773687dc44a8b5ef68b49c5579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachedRigidbody: {fileID: 0}
 --- !u!1 &8629267177422109888
 GameObject:
   m_ObjectHideFlags: 0

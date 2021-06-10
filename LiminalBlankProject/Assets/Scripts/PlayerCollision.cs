@@ -13,6 +13,6 @@ public class PlayerCollision : MonoBehaviour
         }
         
         var direction = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
-        attachedRigidbody.velocity = direction * 3.5f;
+        attachedRigidbody.velocity = direction * 5f;
     }
 }

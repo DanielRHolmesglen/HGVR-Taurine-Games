@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Liminal.SDK.VR;
@@ -8,27 +9,35 @@ using UnityEngine;
 public class GrabbingHand : MonoBehaviour
 {
     public float pickupDistance = 0.3f;
-    private Rigidbody holdingTarget;
+    private Rigidbody _holdingTarget;
+
+    private void Update()
+    {
+        var primaryInput = VRDevice.Device.PrimaryInputDevice;
+        if (!primaryInput.GetButtonDown(VRButton.One)) return;
+        
+        if (_holdingTarget is null)
+        {
+            _holdingTarget = Physics
+                .OverlapSphere(transform.position, pickupDistance)
+                .Select(overlappingCollider => overlappingCollider.GetComponent<Grabbable>()?.attachedRigidbody)
+                .First(attachedRigidbody => attachedRigidbody != null);
+        }
+        else
+        {
+            _holdingTarget = null;
+        }
+
+    }
 
     private void FixedUpdate()
     {
-        var primaryInput = VRDevice.Device.PrimaryInputDevice;
-        var handClosed = primaryInput.GetButton(VRButton.One) || Input.GetMouseButton(0);
-
-        if (!handClosed)
-        {
-            holdingTarget = Physics
-                .OverlapSphere(transform.position, pickupDistance)
-                .Select(collider => collider.GetComponent<Grabbable>()?.attachedRigidbody)
-                .First(collider => collider != null);
-        }
+        if (_holdingTarget is null) return;
         
-        if (!holdingTarget) return;
-        
-        var transformRotation = transform.rotation * Quaternion.Inverse(holdingTarget.transform.rotation);
+        var transformRotation = transform.rotation * Quaternion.Inverse(_holdingTarget.transform.rotation);
         // Adjust the velocity of our target to move it towards our hand
-        holdingTarget.velocity = (transform.position - holdingTarget.transform.position) / Time.fixedDeltaTime;
-        holdingTarget.maxAngularVelocity = 20f;
+        _holdingTarget.velocity = (transform.position - _holdingTarget.transform.position) / Time.fixedDeltaTime;
+        _holdingTarget.maxAngularVelocity = 20f;
 
         var newRotation = new Vector3(
             Mathf.DeltaAngle(0, transformRotation.eulerAngles.x), 
@@ -38,7 +47,7 @@ public class GrabbingHand : MonoBehaviour
         newRotation *= Mathf.Deg2Rad;
 
         // Adjust the angular velocity of the target to rotate it towards our hand
-        holdingTarget.angularVelocity = newRotation / Time.fixedDeltaTime;
+        _holdingTarget.angularVelocity = newRotation / Time.fixedDeltaTime;
     }
 
     private void OnDrawGizmos()
